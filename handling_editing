@@ -1,0 +1,31 @@
+def adj_name():
+    name=(' MariA ')
+    cleaned = name.strip().lower()
+    return cleaned
+
+adjusted_name=adj_name()
+print(adjusted_name)
+
+
+# multtiple return
+def adj_name(name):
+    if not name:
+        return None
+    else:
+        cleaned = name.strip().lower()
+        return cleaned
+
+adjusted_name=adj_name('')
+print(adjusted_name)
+
+# multtiple return
+def adj_name(name):
+    if not name:
+        return None
+    else:
+        cleaned = name.strip().lower()
+        return cleaned
+
+adjusted_name=adj_name('bob')
+print(adjusted_name)
+
